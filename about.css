@@ -23,7 +23,7 @@ main > article{
 main > article >  div > p{
     font-size: 20px;
     color: white;
-    text-align: justify;
+    /* text-align: justify; */
     font-weight: 600;
 }
 main > article >  div  li{
