@@ -7,6 +7,9 @@ for (let i = 1; i < images.length; i++) {
         if(images[i].classList.contains("mobile")){
             img.style.width = "auto";
             img.style.height = "80vh";
+        }else{
+            img.style.width = "80vw";
+            img.style.height = "auto";
         }
         img.setAttribute("src",  images[i].src);
         popup.style.display = "block";
