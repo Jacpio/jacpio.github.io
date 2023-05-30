@@ -1,0 +1,103 @@
+:root{
+    --bgcolor: #203EEB;
+    --color0: #256BE8;
+    --color1: #27A5F2;
+    --color2: #2FC7DB;
+    --color3: #27F2D2;
+    --color4: #2593e8;
+}
+body{
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header  h1{
+    background: -webkit-linear-gradient(bottom left,var(--color2), var(--color0));
+    -webkit-background-clip: text;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+header a{
+    text-decoration: none;
+}
+header img{
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav > a{
+    color: rgb(72, 72, 72);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: 550;
+    position: relative;
+}
+nav > a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    transform: translate( -50%, 100%);
+    background-color: black;
+    transition: 400ms width;
+}
+nav > a[class = active]::before{
+     background: linear-gradient(var(--color2), var(--color0))
+}
+nav >a:hover::before {
+    width: 90%;
+}
+main{
+    margin-top: 50px;
+}
+a[class = active]{
+    background: -webkit-linear-gradient(bottom left,var(--color2), var(--color0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer{
+    width: auto;
+    background: linear-gradient(to left,var(--color2), var(--color0));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 1235px) {
+    header{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 625px) {
+    header img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 520px) {
+    header > nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

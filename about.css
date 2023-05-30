@@ -1,0 +1,57 @@
+main > article{
+    border-radius: 15px;
+    width: 840px;
+    padding: 50px;
+    padding-top: 20px;
+    margin: auto;
+    transition: 400ms;
+    background: linear-gradient(to left, var(--color2), var(--color0))
+}
+main > article > div > h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+main > article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+main > article >  div > p{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+main > article >  div  li{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+main > article  > div > p::first-letter{
+    font-size: 30px;
+    font-weight: 500;
+}
+main > article  img{
+    width: 300px;
+    margin-top: 100px;
+}
+@media only screen and (max-width: 520px) {
+    main > article > div > h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    main > article{
+        flex-direction: column-reverse;
+        width: auto;
+        margin: 20px;
+    }
+    main > article > img{
+        margin-top: 0;
+        width: 200px;
+    }
+}

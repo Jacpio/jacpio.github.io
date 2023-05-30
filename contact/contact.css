@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+main > article  img {
+    width: 300px;
+}
+main > article{
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+    min-height: 350px;
+    padding-top: 20px;
+    margin: 20px;
+    justify-content: center;
+    transition: 400ms;
+    background: linear-gradient(to left, var(--color2), var(--color0))
+}
+main a{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    align-self: center;
+    text-decoration: none;
+    
+}
+main span {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+    transition: 300ms;
+}
+
+main a:hover span {
+    color: rgb(219, 219, 219);
+    transition: 300ms;
+}
+#content{
+    min-height: 100vh;
+}
