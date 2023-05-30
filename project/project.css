@@ -82,8 +82,8 @@ main > article img[class=mobile]{
     margin: 5vh auto auto;
     width: 80vw;
     display: block;
-    /* animation-duration: 0.6s; */
-    /* animation-name: zoom; */
+    animation-duration: 0.6s;
+    animation-name: zoom;
 }
 #popup > span{
     position: absolute;
@@ -98,4 +98,12 @@ main > article img[class=mobile]{
 #popup > span:hover{
     color: rgb(194, 194, 194);
     transition: 0.3s;
+}
+@keyframes zoom {
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
 }
