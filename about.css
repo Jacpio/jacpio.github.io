@@ -13,6 +13,16 @@ main > article > div > h1 {
     margin-bottom: 0;
     font-size: 40px;
 }
+main article a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: bolder;
+}
+main article a:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.3s;
+}
 main > article{
     display: flex;
     justify-content: center;
